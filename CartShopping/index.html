@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Digital World</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+      integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <div class="left">
+      <header class="header text-center py-4">
+        <h1 class="seperator">Product List</h1>
+      </header>
+      <div class="product">
+        <div class="product__tool d-flex mb-3">
+          <div class="product__select-input mr-3">
+            <label for="productSort">Sort by name: </label>
+            <select id="productSort">
+              <option value="asc">A - Z</option>
+              <option value="desc">Z - A</option>
+            </select>
+          </div>
+          <div class="product__select-input">
+            <label for="productFilter">Filter by type: </label>
+            <select id="productFilter">
+              <option value="all">All</option>
+            </select>
+          </div>
+        </div>
+        <div class="product__list row" id="productList"></div>
+      </div>
+    </div>
+    <div class="right">
+      <div class="cart">
+        <h1 class="text-center seperator py-4">Shopping Cart</h1>
+        <div class="cart__list" id="cartList"></div>
+        <div class="cart__bottom">
+          <div class="cart__total">Total: <span class="cart__totalNumber" id="cartTotal"></span></div>
+          <button id="btnCartPay" class="btn-block cart__pay">Checkout</button>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>
